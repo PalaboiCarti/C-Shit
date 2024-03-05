@@ -10,11 +10,21 @@ public class HelloWorld
     {
         static void stacks()
         {
+            //ask user for stack size
             Stack st = new Stack();
+            
+            //ask user for input 
+            Console.WriteLine ("Wtf do you want");
+            Console.WriteLine ("push or pop");
+            int num = Convert.ToInt32(Console.ReadLine());
+            
+            //make elif for pushing and popping num to stack
+            
             st.Push(1);
             st.Push(2);
             st.Push(4);
         
+            //display stack
             foreach (Object obj in st)
             {
                 Console.WriteLine(obj);

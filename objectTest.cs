@@ -22,11 +22,25 @@ public class Car:Vehicle
     public Car(string license): base(VehicleSize.Compact, license){}
 }
 
+public class Motor:Vehicle
+{
+    public Motor(string license):base(VehicleSize.Motorcycle, license){}
+}
+
+public class Truck:Vehicle
+{
+    public Truck(string license):base(VehicleSize.Large, license){}
+}
+
 class Program
 {
   static void Main(string[] args)
   {
-      Car gaysex = new Car("SEGZ420");
-      Console.WriteLine(gaysex.license);
+      Car bugatti = new Car("SEGZ069");
+      Console.WriteLine("Bugatti License: " + bugatti.license);
+      Truck volvo = new Truck("ZAZA420");
+      Console.WriteLine("Volvo License: " + volvo.license);
+      Motor ducati = new Motor("LUCK333");
+      Console.WriteLine("Ducati License: " + ducati.license);
   }
 }

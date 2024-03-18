@@ -1,11 +1,12 @@
 using System;
-class Car
+public class Vehicle
 {
-  private string size; // field
-  public string Size   // property
+  public string size;
+  public string license;
+  public Vehicle(string size, string license)
   {
-    get { return size; }
-    set { size = value; }
+    this.size = size;
+    this.license = license;
   }
 }
 
@@ -13,8 +14,8 @@ class Program
 {
   static void Main(string[] args)
   {
-    Car bugati = new Car();
-    bugati.Size = "regular";
-    Console.WriteLine(bugati.Size);
+    Vehicle trike = new Vehicle("Regular", "SEX420");
+    Console.WriteLine(trike.size);
+    Console.WriteLine(trike.license);
   }
 }

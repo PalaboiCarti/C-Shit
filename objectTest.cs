@@ -9,7 +9,7 @@ public enum VehicleSize
 public class Vehicle
 {
   VehicleSize size;
-  string license;
+  public string license;
   public Vehicle(VehicleSize size, string license)
   {
     this.size = size;
@@ -19,15 +19,14 @@ public class Vehicle
 
 public class Car:Vehicle
 {
-    public Car(string license): base(VehicleSize.Compact, license)
+    public Car(string license): base(VehicleSize.Compact, license){}
 }
 
 class Program
 {
   static void Main(string[] args)
   {
-    Vehicle trike = new Vehicle("Regular", "SEX420");
-    Console.WriteLine(trike.size);
-    Console.WriteLine(trike.license);
+      Car gaysex = new Car("SEGZ420");
+      Console.WriteLine(gaysex.license);
   }
 }
